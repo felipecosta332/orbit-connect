@@ -22,4 +22,6 @@ from orbit_connect import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^$', views.HomePage.as_view(), name='home'),
+    re_path(r'accounts/', include('accounts.urls', namespace='accounts')),
+    re_path(r'accounts/', include('django.contrib.auth.urls')),
 ]
