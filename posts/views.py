@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
@@ -9,7 +10,6 @@ from django.views.generic import CreateView
 from django.views.generic import DeleteView
 from braces.views import SelectRelatedMixin
 from posts.models import Post
-# from posts import forms
 
 User = get_user_model()
 
