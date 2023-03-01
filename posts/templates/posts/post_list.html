@@ -30,7 +30,7 @@
                 
                 {% for other_group in get_user_groups %}
                     <li class="group li-with-bullet">
-                        <a href="{% url 'groups:single'slug=other_group.slug %}"></a>
+                        <a href="{% url 'groups:single' slug=other_group.slug %}"></a>
                     </li>
                 {% endfor %}
                     
